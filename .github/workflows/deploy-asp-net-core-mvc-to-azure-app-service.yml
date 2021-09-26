@@ -1,4 +1,4 @@
-# .github/workflows/deploy-app-to-azure-app-service.yml
+# .github/workflows/deploy-asp-net-core-mvc-to-azure-app-service.yml
 
 name: Deploy ASP.NET Core MVC app to Azure App Service
 on:
@@ -13,7 +13,7 @@ env:
   NODE_VERSION: 12.x # Set Node.js version to use
 
 jobs:
-  build:
+  build_and_deploy_job:
     # Find more virtual environments
     # https://www.dotnetthailand.com/programming-cookbook/github-actions/github-actions-fundamentals#findmorevirtualenvironments
     runs-on: ubuntu-latest
